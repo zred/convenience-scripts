@@ -8,6 +8,8 @@ dependencies:
    * `sudo apt install fzf bat ripgrep`
 1. make a local bin if you dont have one
    * `[ -d ~/.local/bin ] || mkdir -p ~/.local/bin`
+1. add ~/.local/bin to path in your ~/.bashrc
+   * `echo 'PATH=${PATH}:~/.local/bin' >> ~/.bashrc`
 1. copy scripts to the local bin, I prefer renaming them
    * `cp fzf-preview.sh ~/.local/bin/pv`
    * `cp interactive-rg.sh ~/.local/bin/gs`
