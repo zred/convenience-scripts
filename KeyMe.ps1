@@ -61,7 +61,7 @@ $SshKeyComment = "$UserName on $HostName at $TimeStamp"
 Write-Host "Key file: $SshKeyFilePath" -ForegroundColor Cyan
 Write-Host "Comment: $SshKeyComment" -ForegroundColor Cyan
 
-Write-Output "" | ssh-keygen -t ed25519 -C $SshKeyComment -f $SshKeyFilePath
+ssh-keygen -t ed25519 -C $SshKeyComment -f $SshKeyFilePath -N '""'
 
 # ============================================================================
 # 5. Copy Public Key to Clipboard
